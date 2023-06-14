@@ -19,11 +19,11 @@ for(let i=1;i <= 100; i++){
     //  evitando così l' ingresso nelle altre due condizioni,SE SI stampo fizzbuzz
     if(i % 3 == 0 && i % 5 == 0) {
 
-        row.append(col);
-        
-       
+        const col = document.createElement("div");
 
-        col.append(`${fizzBuzz}`);
+        col.append(fizzBuzz)
+
+        row.append(col)
 
         console.log(fizzBuzz);
     }
@@ -32,11 +32,11 @@ for(let i=1;i <= 100; i++){
     // controllo se i è multiplo sia di 3,SE SI stampo fizz 
     else if(i % 3 == 0) {
 
-        col=row.append(col);
-        
-       
+        const col = document.createElement("div");
 
-        col.append(`${fizz}`);
+        col.append(fizz)
+
+        row.append(col)
 
         console.log(fizz);
     }
@@ -46,12 +46,11 @@ for(let i=1;i <= 100; i++){
     // controllo se i è multiplo sia di 5,SE SI stampo buzz
     else if(i % 5 == 0) {
 
-        col=row.append(col);
-        
-       
+        const col = document.createElement("div");
 
-        col.append(`${buzz}`);
-    
+        col.append(buzz)
+
+        row.append(col)
 
         console.log(buzz);
     }
@@ -61,18 +60,11 @@ for(let i=1;i <= 100; i++){
 
     else{
 
-        let cL = col.classList;
+        const col = document.createElement("div");
 
-        cL.add("col-auto");
+        col.append(i)
 
-        console.log(cL);
-        
-        col.append(`${i}`);
-
-        col=row.append(col);
-
-
-
+        row.append(col)
 
         console.log(i);
     }
