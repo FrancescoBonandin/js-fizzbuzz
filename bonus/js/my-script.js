@@ -21,6 +21,12 @@ for(let i=1;i <= 100; i++){
 
         const col = document.createElement("div");
 
+        let cL = col.classList;
+
+        cL.add(`col-2`, `height-ratio`, `mx-3`, `border`, `d-flex`,
+                `flex-grow-1`,`justify-content-center`,
+                `align-items-center`,`bg-danger`, `text-white`)
+
         col.append(fizzBuzz)
 
         row.append(col)
@@ -33,6 +39,12 @@ for(let i=1;i <= 100; i++){
     else if(i % 3 == 0) {
 
         const col = document.createElement("div");
+
+        let cL = col.classList;
+
+        cL.add(`col-2`, `height-ratio`, `mx-3`, `border`, `d-flex`,
+                `flex-grow-1`,`justify-content-center`,
+                 `align-items-center`, `bg-warning`)
 
         col.append(fizz)
 
@@ -48,6 +60,12 @@ for(let i=1;i <= 100; i++){
 
         const col = document.createElement("div");
 
+        let cL = col.classList;
+
+        cL.add(`col-2`, `height-ratio`, `mx-3`, `border`, `d-flex`,
+                `flex-grow-1`,`justify-content-center`,
+                `align-items-center`, `bg-success`, `text-white`)
+
         col.append(buzz)
 
         row.append(col)
@@ -61,6 +79,11 @@ for(let i=1;i <= 100; i++){
     else{
 
         const col = document.createElement("div");
+
+        let cL = col.classList;
+
+        cL.add(`col-2`, `height-ratio`, `mx-3`, `border`, `d-flex`, 
+                `flex-grow-1`, `justify-content-center`, `align-items-center`, `bg-primary`)
 
         col.append(i)
 

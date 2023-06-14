@@ -11,6 +11,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.height-ratio{
+    aspect-ratio: 1;
+}
 
 
 /*-------DEBUG---------*/
